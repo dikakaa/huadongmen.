@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王妍</title>
+    <style>
+        .chujihezi{
+            width: 700px;
+            height: auto; 
+            margin: auto;
+            display: block;
+        }
+        .chujiliebiao{
+            padding: 0;
+            list-style: none;
+        }
+        .chujiliebiao>li{
+            position: relative;
+            margin-bottom: 10px; 
+            width: 90px;
+            height: 40px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        .erjihezi{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%; 
+            width: 100px;
+            background-color: #F0F8FF;
+            border-radius: 5px;
+            padding: 0; 
+            z-index: 1000;
+        }
+        .erjiliebiao{
+            padding:0;
+        }
+        .erjiliebiao li{
+            list-style:none;
+            margin:0; 
+        }
+        .erjiliebiao li a{
+            color: darkslategrey;
+            font-size: 18px;
+            display: block;
+            padding: 5px 25px; 
+        }
+        .erjiliebiao li a:hover{
+            background-color: ivory;
+        }
+        .chujiliebiao>li:hover>.erjihezi{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="chujihezi">
+        <ul class="chujiliebiao">
+            <li>
+                <a href="#">娱乐</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">抖音</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">知乎</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">购物</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">天猫</a></li>
+                        <li><a href="#">京东</a></li>
+                        <li><a href="#">淘宝</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">搜索</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">夸克</a></li>
+                        <li><a href="#">谷歌</a></li>
+                        <li><a href="#">百度</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
